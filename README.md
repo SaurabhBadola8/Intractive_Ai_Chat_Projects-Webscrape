@@ -1,5 +1,6 @@
-This Python script utilizes Selenium to interact with the website "https://www.blackbox.ai/" in a headless Chrome browser to ask a question and retrieve an answer. Let's break down the components and functionality of the script:
-
+### Purpose:
+This script automates the process of querying a specific website ("https://www.blackbox.ai/") with a user-provided question and retrieving the corresponding answer. 
+It demonstrates basic web scraping and automation techniques using Python and Selenium.
 
 1. **Imports:**
    - `webdriver` from `selenium`: Allows automation of web browser actions.
@@ -11,15 +12,15 @@ This Python script utilizes Selenium to interact with the website "https://www.b
      - Sets Chrome options to run the browser in headless mode (without GUI).
      - Creates a WebDriver instance (`self.driver`) using Chrome with specified options.
      - Opens the website "https://www.blackbox.ai/".
-     - Prompts the user to input a question (`self.text`).
+     - Prompts the user to input a question text.
 
    - **`send_data` method:**
-     - Finds the input element for the question using XPath (`'//*[@id="chat-input-box"]'`).
-     - Enters the user's question (`self.text`) into the input field.
-     - Finds and clicks the button to submit the question using XPath (`'/html/body/div[2]/main/div/div[2]/div/div/div[2]/div[2]/div[2]/form/div[5]/div[3]/button'`).
+     - Finds the input element for the question using XPath.
+     - Enters the user's question text into the input field.
+     - Finds and clicks the button to submit the question using XPath.
 
    - **`get_answer` method:**
-     - Retrieves the answer from the response element using XPath (`'/html/body/div[2]/main/div[3]/div[2]/div/div/div[1]/div/div[2]/div[1]/div/div[2]/div[3]'`).
+     - Retrieves the answer from the response element using XPath.
      - Prints the retrieved answer.
 
 3. **Execution:**
@@ -27,11 +28,4 @@ This Python script utilizes Selenium to interact with the website "https://www.b
    - Calls `send_data` method to input the question and submit it.
    - Calls `get_answer` method to retrieve and print the answer.
 
-### Usage:
-- Make sure you have Selenium installed (`pip install selenium`) and Chrome WebDriver installed and accessible in your system's PATH.
-- Adjust XPath expressions if the structure of the website changes.
-- Handle exceptions and errors for robustness in a real-world scenario.
 
-### Purpose:
-This script automates the process of querying a specific website ("https://www.blackbox.ai/") with a user-provided question and retrieving the corresponding answer. 
-It demonstrates basic web scraping and automation techniques using Python and Selenium.
