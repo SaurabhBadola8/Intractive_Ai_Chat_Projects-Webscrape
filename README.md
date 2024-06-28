@@ -1,3 +1,5 @@
+![Screenshot 2024-06-28 154952](https://github.com/SaurabhBadola8/Intractive_Ai_Chat_Projects-Webscrape/assets/173368852/0b355912-cf33-472a-8449-015da4ccf675)
+
 ### Purpose:
 This script automates the process of querying a specific website ("https://www.blackbox.ai/") with a user-provided question and retrieving the corresponding answer. 
 It demonstrates basic web scraping and automation techniques using Python and Selenium.
